@@ -1,0 +1,19 @@
+#+title: Ryo Haruyama
+#+options: toc:nil
+#+options: num:nil
+#+options: html-postamble:nil
+
+* Bio
+  Student at Graduate School of Informatics, Naogya University.
+
+* Interest
+  - Linear Logic
+  - Statistical Mechanics
+  
+* Link
+-  [[https://github.com/rharuyama/][GitHub]]
+-  [[https://twitter.com/RyoHaruyama][Twitter]]
+-  [[https://connpass.com/user/Ryo_Haruyama/][connpass]]  
+
+* Email
+  - aprilfoolsd1y<at>gmail.com
