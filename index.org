@@ -6,11 +6,11 @@
 * Bio
   Student at Graduate School of Informatics, Naogya University.
 
-* Interest
+* Interests
   - Linear Logic
   - Statistical Mechanics
   
-* Link
+* Links
 -  [[https://github.com/rharuyama/][GitHub]]
 -  [[https://twitter.com/RyoHaruyama][Twitter]]
 -  [[https://connpass.com/user/Ryo_Haruyama/][connpass]]  
