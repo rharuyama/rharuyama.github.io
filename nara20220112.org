@@ -3,5 +3,14 @@
 #+options: num:nil
 #+options: html-postamble:nil
 
+* 一日目
+  #+caption: 本日の役目を終えた売店
+  #+attr_html: :width 700px
+  [[./images/mbtlink.jpg]]
+
+  #+caption: 古事記ある
+  #+attr_html: :width 700px  
+  [[./images/kojiki.jpg]]
+
 * 二日目
   最近になって初めて「風呂で疲れがとれる」という概念を理解したのは多分老い．
