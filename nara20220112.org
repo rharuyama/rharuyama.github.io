@@ -1,0 +1,7 @@
+#+title: 奈良観光記録
+#+options: toc:nil
+#+options: num:nil
+#+options: html-postamble:nil
+
+* 二日目
+  最近になって初めて「風呂で疲れがとれる」という概念を理解したのは多分老い．

@@ -17,3 +17,6 @@
 
 * Email
   - aprilfoolsd1y<at>gmail.com
+
+* Blog
+  - [[rharuyama.github.io/nara20220112][奈良観光記録]]
