@@ -54,11 +54,11 @@
   #+attr_html: :width 700px  
   [[./images/asuka.jpg]] 
 
-  #+caption: 
+  #+caption: でかい
   #+attr_html: :width 700px  
   [[./images/zenzai.jpg]] 
 
-  #+caption: 
+  #+caption: 意外と小さい
   #+attr_html: :width 700px  
   [[./images/takamatsudsuka-kofun.jpg]] 
 
