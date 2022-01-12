@@ -36,14 +36,37 @@
 
   中央の橿原周辺は，  
   - 橿原神宮
-  - 橿原オークホテル レストラン
 
   南の飛鳥周辺は，  
   - 高松塚古墳
 
   古墳というものに初めて行くことになるかもしれない．
 
-  帰りの新幹線もとらないと．  
+  #+caption: 日本初まりの地に来た
+  #+attr_html: :width 700px  
+  [[./images/kashihara.jpg]] 
+
+  #+caption: torii
+  #+attr_html: :width 700px  
+  [[./images/torii.jpg]] 
+
+  #+caption: asuka
+  #+attr_html: :width 700px  
+  [[./images/asuka.jpg]] 
+
+  #+caption: 
+  #+attr_html: :width 700px  
+  [[./images/zenzai.jpg]] 
+
+  #+caption: 
+  #+attr_html: :width 700px  
+  [[./images/takamatsudsuka-kofun.jpg]] 
+
+  #+caption: 
+  #+attr_html: :width 700px  
+  [[./images/nakaoyama-kofun.jpg]] 
+
+  
 
 #+options: toc:nil
 #+options: num:nil
