@@ -1,20 +1,33 @@
 #+title: 奈良観光記録
-#+options: toc:nil
-#+options: num:nil
-#+options: html-postamble:nil
 
 * 一日目
   #+caption: 本日の役目を終えた売店
-  #+attr_html: :width 700px
   [[./images/mbtlink.jpg]]
 
   #+caption: 古事記ある
-  #+attr_html: :width 700px  
   [[./images/kojiki.jpg]]
 
   最近になって初めて「風呂で疲れがとれる」という概念を理解したのは多分老い．
 
 * 二日目
+  #+caption: 朝食バイキング
+  #+attr_html: :width 700px  
+  [[./images/breakfast.jpg]]
+
+  右奥の汁物は飛鳥鍋というやつで，シチューのような味がしとてもおいしい．左奥の白い飲み物はバナナと酒粕のスムージーというやつで，これも複雑な味がしておいしい．
+
+  #+caption: 三輪素麺
+  #+attr_html: :width 700px  
+  [[./images/somen.jpg]]
+
+  #+caption: 大和牛と地野菜のカレーご飯
+  #+attr_html: :width 700px  
+  [[./images/curry.jpg]]
+
+  #+caption: ☆がついているのは全部食べた
+  #+attr_html: :width 700px  
+  [[./images/map.jpg]] 
+
   とりあえず訪れる地の候補リスト：
 
   北の奈良周辺は，
@@ -31,3 +44,18 @@
   古墳というものに初めて行くことになるかもしれない．
 
   帰りの新幹線もとらないと．  
+
+#+options: toc:nil
+#+options: num:nil
+#+options: html-postamble:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD: body {
+#+HTML_HEAD:     padding: 15rem;
+#+HTML_HEAD:     margin: auto;
+#+HTML_HEAD: }
+#+HTML_HEAD: img {
+#+HTML_HEAD:     width: 100%;
+#+HTML_HEAD:     height: auto;
+#+HTML_HEAD: }
+#+HTML_HEAD: </style>
+  

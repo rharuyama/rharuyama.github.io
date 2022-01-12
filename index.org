@@ -1,7 +1,4 @@
 #+title: Ryo Haruyama
-#+options: toc:nil
-#+options: num:nil
-#+options: html-postamble:nil
 
 * Bio
   Student at Graduate School of Informatics, Naogya University.
@@ -20,3 +17,18 @@
 
 * Blog
   - [[./nara20220112.html][奈良観光記録]]
+
+#+options: toc:nil
+#+options: num:nil
+#+options: html-postamble:nil
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD: body {
+#+HTML_HEAD:     padding: 15rem;
+#+HTML_HEAD:     margin: auto;
+#+HTML_HEAD: }
+#+HTML_HEAD: img {
+#+HTML_HEAD:     width: 100%;
+#+HTML_HEAD:     height: auto;
+#+HTML_HEAD: }
+#+HTML_HEAD: </style>
+    
