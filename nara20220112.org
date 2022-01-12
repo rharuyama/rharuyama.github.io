@@ -51,12 +51,12 @@
 #+HTML_HEAD: <style type="text/css">
 #+HTML_HEAD: body {
 #+HTML_HEAD:     max-width: 600px;
-#+HTML_HEAD:     padding: 1em;
+#+HTML_HEAD:     width: 100%;
 #+HTML_HEAD:     margin: auto;
 #+HTML_HEAD: }
 #+HTML_HEAD: img {
 #+HTML_HEAD:     max-width: 600px;
 #+HTML_HEAD:     width: 100%;
-#+HTML_HEAD:     height: auto;
+#+HTML_HEAD:     
 #+HTML_HEAD: }
 #+HTML_HEAD: </style>
