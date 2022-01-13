@@ -7,6 +7,9 @@
   #+caption: 古事記ある
   [[./images/kojiki.jpg]]
 
+  - [[https://twitter.com/ryoharuyama/status/1480931698192056321?s=21][tweet1]]
+  - [[https://twitter.com/ryoharuyama/status/1480931070447329281?s=21][tweet2]]
+
   最近になって初めて「風呂で疲れがとれる」という概念を理解したのは多分老い．
 
 * 二日目
@@ -66,7 +69,9 @@
   #+attr_html: :width 700px  
   [[./images/nakaoyama-kofun.jpg]] 
 
-  
+  #+caption: 
+  #+attr_html: :width 700px  
+  [[./images/kasuga-taisha.jpg]]   
 
 #+options: toc:nil
 #+options: num:nil
