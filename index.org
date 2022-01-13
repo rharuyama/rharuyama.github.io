@@ -8,9 +8,9 @@
   - Statistical Mechanics
   
 * Links
--  [[https://github.com/rharuyama/][GitHub]]
--  [[https://twitter.com/RyoHaruyama][Twitter]]
--  [[https://connpass.com/user/Ryo_Haruyama/][connpass]]  
+  -  [[https://github.com/rharuyama/][GitHub]]
+  -  [[https://twitter.com/RyoHaruyama][Twitter]]
+  -  [[https://connpass.com/user/Ryo_Haruyama/][connpass]]  
 
 * Email
   - aprilfoolsd1y<at>gmail.com
@@ -18,17 +18,17 @@
 * Blog
   - [[./nara20220112.html][奈良観光記録]]
 
-#+options: toc:nil
-#+options: num:nil
-#+options: html-postamble:nil
-#+HTML_HEAD: <style type="text/css">
-#+HTML_HEAD: body {
-#+HTML_HEAD:     max-width: 700px;
-#+HTML_HEAD:     width: 100%;
-#+HTML_HEAD:     margin: auto;
-#+HTML_HEAD: }
-#+HTML_HEAD: img {
-#+HTML_HEAD:     max-width: 700px;
-#+HTML_HEAD:     width: 100%;
-#+HTML_HEAD: }
-#+HTML_HEAD: </style>
+  #+options: toc:nil
+  #+options: num:nil   
+  #+options: html-postamble:nil
+  #+HTML_HEAD: <style type="text/css">
+  #+HTML_HEAD: body {
+  #+HTML_HEAD:     max-width: 700px;
+  #+HTML_HEAD:     width: 100%;
+  #+HTML_HEAD:     margin: auto auto 200px auto;
+  #+HTML_HEAD: }
+  #+HTML_HEAD: img {
+  #+HTML_HEAD:     max-width: 700px;
+  #+HTML_HEAD:     width: 100%;
+  #+HTML_HEAD: }
+  #+HTML_HEAD: </style>

@@ -1,23 +1,39 @@
 #+title: 奈良観光記録
 
 * 一日目
+
+  今は夜中で、ここは[[https://www.daiwaresort.jp/kashihara/index.html][THE KASHIHARA]]というホテルだ。ある人にぜいたくをさせてもらってここに居る。申し訳ないと思うのが普通かもしれないけれど、僕はこういうときは面白そうなことなら乗ってみたいと思うのだ。
+  
   #+caption: 本日の役目を終えた売店
   [[./images/mbtlink.jpg]]
 
-  #+caption: 古事記ある
+  #+caption: 古事記
   [[./images/kojiki.jpg]]
 
-  - [[https://twitter.com/ryoharuyama/status/1480931698192056321?s=21][tweet1]]
-  - [[https://twitter.com/ryoharuyama/status/1480931070447329281?s=21][tweet2]]
-
-  最近になって初めて「風呂で疲れがとれる」という概念を理解したのは多分老い．
+  旅の記録をつけようと思って、こんなツイートをした。
+  
+  #+begin_quote
+  [[https://twitter.com/ryoharuyama/status/1480931698192056321?s=21][広い。そういえばホテルなんて何年ぶりだろうかと考えた。古事記ある。]]
+  
+  [[https://twitter.com/ryoharuyama/status/1480931070447329281?s=21][奈良に来た。冷え切った体に染み渡る湯。明日は色々回る。]]
+  #+end_quote
 
 * 二日目
+
+  #+begin_quote
+  [[https://twitter.com/ryoharuyama/status/1481010723400523777?s=21][朝起きたら寒かったので、また温泉を有効活用する。]]
+  #+end_quote
+  旅の記録が長くなりそうだと思ったから、これ以降ツイートはやめてブログにまとめてみることにした。
+   
   #+caption: 朝食バイキング
   #+attr_html: :width 700px  
   [[./images/breakfast.jpg]]
 
-  右奥の汁物は飛鳥鍋というやつで，シチューのような味がしとてもおいしい．左奥の白い飲み物はバナナと酒粕のスムージーというやつで，これも複雑な味がしておいしい．
+  僕は珍しい食べ物を食べるのが好きだ。旅先ではその地の名物を食べないわけにはいかない。現地の名物を効率よく食べるにあたって、いろいろなものを少しずづ食べられるホテルのバイキングほど適切なものはない。もともと食事込みのプランではなかったが、追加で朝食のチケットを買ってしまった。
+  
+  右奥の汁物は飛鳥鍋というやつで、シチューのような味がしてとてもおいしい。左奥の白い飲み物はバナナと酒粕のスムージーというやつで、これも複雑な味がしておいしい。
+
+  右手前のおかゆみたいなやつは茶粥である。「茶粥が名物になった背景は、源平の合戦で出た落武者が貧しい生活を強いられたためではないか」とレストランのスタッフさんが独自の考察を聞かせてくれたが、真実はわからない。
 
   #+caption: 三輪素麺
   #+attr_html: :width 700px  
@@ -27,63 +43,101 @@
   #+attr_html: :width 700px  
   [[./images/curry.jpg]]
 
+  スタッフさんに勧められたカレースープ。
+
   #+caption: ☆がついているのは全部食べた
   #+attr_html: :width 700px  
   [[./images/map.jpg]] 
 
-  とりあえず訪れる地の候補リスト：
+  ホテルを出た。スマホで気温を調べると2度だった。そこそこ寒い。
 
-  北の奈良周辺は，
-  - 春日大社
-  - 奈良の大仏(東大寺)
+** 橿原
 
-  中央の橿原周辺は，  
-  - 橿原神宮
+   #+caption: でかい灯籠
+   #+attr_html: :width 700px  
+   [[./images/toro.jpg]]
 
-  南の飛鳥周辺は，  
-  - 高松塚古墳
+   初めに訪れたのは橿原神宮である。入口の灯籠(であってるだろうか？)を見上げた。スケールがでかい。
+   
+   #+caption: 日本はじまりの地に来た
+   #+attr_html: :width 700px  
+   [[./images/kashihara.jpg]]
 
-  古墳というものに初めて行くことになるかもしれない．
+   橿原神宮は神武天皇が祀られていることから「日本はじまりの地」と呼ばれているらしい。
 
-  #+caption: 日本初まりの地に来た
-  #+attr_html: :width 700px  
-  [[./images/kashihara.jpg]] 
+   #+caption: 
+   #+attr_html: :width 700px  
+   [[./images/torii.jpg]]
 
-  #+caption: torii
-  #+attr_html: :width 700px  
-  [[./images/torii.jpg]] 
+   #+caption: おみくじ
+   #+attr_html: :width 700px  
+   [[./images/omikuji.jpg]]
 
-  #+caption: asuka
-  #+attr_html: :width 700px  
-  [[./images/asuka.jpg]] 
+   おみくじを引いた。中吉であった。
 
-  #+caption: でかい
-  #+attr_html: :width 700px  
-  [[./images/zenzai.jpg]] 
+** 飛鳥
 
-  #+caption: 意外と小さい
-  #+attr_html: :width 700px  
-  [[./images/takamatsudsuka-kofun.jpg]] 
+   #+caption: 飛鳥駅からの景色
+   #+attr_html: :width 700px  
+   [[./images/asuka.jpg]]
 
-  #+caption: 
-  #+attr_html: :width 700px  
-  [[./images/nakaoyama-kofun.jpg]] 
+   続いて飛鳥を訪れた。高松塚古墳が目当てである。けれど寒さが溜っていたので、あたたかい食べ物で体をあたためてからにしようと思って店を探したところ、[[https://tabelog.com/nara/A2903/A290303/29001003/dtlphotolst/?smp=2&sby=D&srt=normal&PG=3][珈琲店]]を見つけた。
 
-  #+caption: 
-  #+attr_html: :width 700px  
-  [[./images/kasuga-taisha.jpg]]   
+   #+caption: 抹茶ぜんざい(栗入り)。でかい。
+   #+attr_html: :width 700px  
+   [[./images/zenzai.jpg]]
 
-#+options: toc:nil
-#+options: num:nil
-#+options: html-postamble:nil
-#+HTML_HEAD: <style type="text/css">
-#+HTML_HEAD: body {
-#+HTML_HEAD:     max-width: 700px;
-#+HTML_HEAD:     width: 100%;
-#+HTML_HEAD:     margin: auto;
-#+HTML_HEAD: }
-#+HTML_HEAD: img {
-#+HTML_HEAD:     max-width: 700px;
-#+HTML_HEAD:     width: 100%;
-#+HTML_HEAD: }
-#+HTML_HEAD: </style>
+   [[https://tabelog.com/imgview/original?id=r9491398825021][メニュー]]曰く、
+  
+   #+BEGIN_QUOTE  
+   「当店では本来の抹茶の風味を楽しんでもらう為、石うすを使って丹念に挽いた純正の宇治茶を使用しています。
+   本物の味をぜひ一度ご賞味下さい。」
+   #+END_QUOTE
+
+   らしい。餅は一つしか入っていなかったけれど、小豆のおかげか思ったよりお腹が満たされた。
+
+   徒歩15分程で飛鳥歴史公園に着いた。
+
+   #+caption: 高松塚古墳
+   #+attr_html: :width 700px  
+   [[./images/takamatsudsuka-kofun.jpg]]
+
+   実は古墳というものは初めて見る。ギザのピラミッドくらい大きいものかと思っていたが、意外と小さいことがわかった。
+
+   #+caption: 中尾山古墳
+   #+attr_html: :width 700px  
+   [[./images/nakaoyama-kofun.jpg]]
+
+** 奈良
+
+   最後に訪れたのは春日大社だ。
+
+   #+caption: 
+   #+attr_html: :width 700px  
+   [[./images/kasuga-taisha.jpg]]
+
+   哺乳類の匂いがする。その辺りに鹿がいるからである。
+
+   帰る時間が近づいていて、奈良市での時間は短かかったのが、少し残念である。
+
+   #+caption: 
+   #+attr_html: :width 700px  
+   [[./images/sushi.jpg]]
+
+   駅で買って、帰りのバスの中で食べた「わさび葉寿し」という食べ物。遅めの時間だったので三割引で売っていた。
+
+   今度来た時は奈良の名物で有名な柿の葉寿司も食べてみたい。
+
+   #+options: num:nil   
+   #+options: html-postamble:nil
+   #+HTML_HEAD: <style type="text/css">
+   #+HTML_HEAD: body {
+   #+HTML_HEAD:     max-width: 700px;
+   #+HTML_HEAD:     width: 100%;
+   #+HTML_HEAD:     margin: auto auto 200px auto;
+   #+HTML_HEAD: }
+   #+HTML_HEAD: img {
+   #+HTML_HEAD:     max-width: 700px;
+   #+HTML_HEAD:     width: 100%;
+   #+HTML_HEAD: }
+   #+HTML_HEAD: </style>
