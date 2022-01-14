@@ -73,7 +73,9 @@
    #+attr_html: :width 700px  
    [[./images/omikuji.jpg]]
 
-   おみくじを引いた。中吉であった。
+   おみくじを引いた。中吉であった。写真を撮ったあと結んでおいた。
+
+   散歩が好きな僕であるが、ここまでで既にかなり歩いた気がしている。
 
 ** 飛鳥
 
@@ -128,16 +130,8 @@
 
    今度来た時は奈良の名物で有名な柿の葉寿司も食べてみたい。
 
+   閾値を越えたのか、疲れが頭打ちになってきた。しかし今日帰ってすぐ寝て、明日風呂に入れば、なんとかなるのだろう。
+
+   #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
    #+options: num:nil   
    #+options: html-postamble:nil
-   #+HTML_HEAD: <style type="text/css">
-   #+HTML_HEAD: body {
-   #+HTML_HEAD:     max-width: 700px;
-   #+HTML_HEAD:     width: 100%;
-   #+HTML_HEAD:     margin: auto auto 200px auto;
-   #+HTML_HEAD: }
-   #+HTML_HEAD: img {
-   #+HTML_HEAD:     max-width: 700px;
-   #+HTML_HEAD:     width: 100%;
-   #+HTML_HEAD: }
-   #+HTML_HEAD: </style>

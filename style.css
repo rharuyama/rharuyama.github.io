@@ -1,0 +1,9 @@
+body {
+    max-width: 700px;
+    width: 90%;
+    margin: auto auto 200px auto;
+}
+img {
+    max-width: 700px;
+    width: 100%;
+}
