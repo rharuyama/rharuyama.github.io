@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-09 Wed 21:30 -->
+<!-- 2022-02-09 Wed 21:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arduinoでエアコン自動化・水耕栽培</title>
@@ -224,18 +224,18 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf5beb22">はじめに</a></li>
-<li><a href="#org7644126">背景</a></li>
-<li><a href="#org5936089">Arduinoでエアコン自動化</a>
+<li><a href="#org8d65f45">はじめに</a></li>
+<li><a href="#org63984b3">背景</a></li>
+<li><a href="#orgd956cf8">Arduinoでエアコン自動化</a>
 <ul>
-<li><a href="#orga01963a">買い物</a></li>
-<li><a href="#org0bc22d3">環境構築</a></li>
-<li><a href="#org7e8d7b5">Arduinoで内蔵LEDを点滅させる</a></li>
-<li><a href="#org1fff755">Arduinoで外部LEDを点滅させる</a></li>
-<li><a href="#org8e0c823">Arduinoで赤外線を受信し、16進数で取得</a></li>
+<li><a href="#orgb017879">買い物</a></li>
+<li><a href="#orgbd39260">環境構築</a></li>
+<li><a href="#org6d5309e">Arduinoで内蔵LEDを点滅させる</a></li>
+<li><a href="#org637c305">Arduinoで外部LEDを点滅させる</a></li>
+<li><a href="#org3ef1398">Arduinoで赤外線を受信し、16進数で取得</a></li>
 </ul>
 </li>
-<li><a href="#org4148c2a">Arduinoで水耕栽培</a></li>
+<li><a href="#org2ee7e6e">Arduinoで水耕栽培</a></li>
 </ul>
 </div>
 </div>
@@ -251,38 +251,38 @@
 </p>
 </blockquote>
 
-<div id="outline-container-orgf5beb22" class="outline-2">
-<h2 id="orgf5beb22">はじめに</h2>
-<div class="outline-text-2" id="text-orgf5beb22">
+<div id="outline-container-org8d65f45" class="outline-2">
+<h2 id="org8d65f45">はじめに</h2>
+<div class="outline-text-2" id="text-org8d65f45">
 <p>
 この文章は、マイクロコンピュータを用いて水耕栽培を自動化することを目標にした開発の忘備録で、現在執筆中です。
 </p>
 </div>
 </div>
-<div id="outline-container-org7644126" class="outline-2">
-<h2 id="org7644126">背景</h2>
-<div class="outline-text-2" id="text-org7644126">
+<div id="outline-container-org63984b3" class="outline-2">
+<h2 id="org63984b3">背景</h2>
+<div class="outline-text-2" id="text-org63984b3">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-org5936089" class="outline-2">
-<h2 id="org5936089">Arduinoでエアコン自動化</h2>
-<div class="outline-text-2" id="text-org5936089">
+<div id="outline-container-orgd956cf8" class="outline-2">
+<h2 id="orgd956cf8">Arduinoでエアコン自動化</h2>
+<div class="outline-text-2" id="text-orgd956cf8">
 </div>
-<div id="outline-container-orga01963a" class="outline-3">
-<h3 id="orga01963a">買い物</h3>
-<div class="outline-text-3" id="text-orga01963a">
+<div id="outline-container-orgb017879" class="outline-3">
+<h3 id="orgb017879">買い物</h3>
+<div class="outline-text-3" id="text-orgb017879">
 <ul class="org-ul">
 <li><a href="https://www.amazon.co.jp/gp/product/B086WWNP9Y/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&amp;psc=1">VKLSVAN ESP32 ESP-32S NodeMCUマイクロUSBデュアルコア開発ボードモジュール 2.4GHz ワイヤレスWiFi + Bluetoothデュアルモード ESP-WROOM-32モジュール内臓 マイクロコントローラ</a></li>
 <li><a href="https://www.amazon.co.jp/gp/product/B06XF2HZGT/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&amp;psc=1">ELEGOO Arduino用UNO R3スターターキット レベルアップ チュートリアル付 mega2560 r3 nanoと互換 [並行輸入品]​</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org0bc22d3" class="outline-3">
-<h3 id="org0bc22d3">環境構築</h3>
-<div class="outline-text-3" id="text-org0bc22d3">
+<div id="outline-container-orgbd39260" class="outline-3">
+<h3 id="orgbd39260">環境構築</h3>
+<div class="outline-text-3" id="text-orgbd39260">
 <p>
 ホスト環境は以下の通りです：
 </p>
@@ -304,7 +304,17 @@ Arduino IDEの設定については次のブログが参考になります。
 </ul>
 
 <p>
-このブログにはGUIのArduino IDEを用いる方法が書かれています。しかし私の環境ではこの方法は少し問題がありました。具体的にいうと、以前行なった設定がリブート後に持ち越せませんでした。ですので、次に紹介するCLIを使うことにしました。エディタはemacsで、c-modeをhookして使いました。
+このブログにはGUIのArduino IDEを用いる方法が書かれています。しかし私の環境ではこの方法は少し問題がありました。具体的にいうと、以前行なった設定がリブート後に持ち越せませんでした。ですので、次に紹介するCLIを使うことにしました。
+</p>
+
+<ul class="org-ul">
+<li><a href="https://arduino.github.io/arduino-cli/0.21/installation/">Arduino CLI Installation</a></li>
+
+<li><a href="https://arduino.github.io/arduino-cli/0.21/getting-started/">Arduino CLI Getting started</a></li>
+</ul>
+
+<p>
+エディタはemacsで、c-modeをhookして使いました。
 </p>
 
 <pre class="example">
@@ -340,35 +350,29 @@ device:
 new:
 	$(CC) sketch new name
 </pre>
-
-<ul class="org-ul">
-<li><a href="https://arduino.github.io/arduino-cli/0.21/installation/">Arduino CLI Installation</a></li>
-
-<li><a href="https://arduino.github.io/arduino-cli/0.21/getting-started/">Arduino CLI Getting started</a></li>
-</ul>
 </div>
 </div>
 
-<div id="outline-container-org7e8d7b5" class="outline-3">
-<h3 id="org7e8d7b5">Arduinoで内蔵LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-org7e8d7b5">
+<div id="outline-container-org6d5309e" class="outline-3">
+<h3 id="org6d5309e">Arduinoで内蔵LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-org6d5309e">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-org1fff755" class="outline-3">
-<h3 id="org1fff755">Arduinoで外部LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-org1fff755">
+<div id="outline-container-org637c305" class="outline-3">
+<h3 id="org637c305">Arduinoで外部LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-org637c305">
 <p>
 <img src="./images-a/led.jpg" alt="led.jpg" />
 <img src="./images-a/circuit.jpg" alt="circuit.jpg" />
 </p>
 </div>
 </div>
-<div id="outline-container-org8e0c823" class="outline-3">
-<h3 id="org8e0c823">Arduinoで赤外線を受信し、16進数で取得</h3>
-<div class="outline-text-3" id="text-org8e0c823">
+<div id="outline-container-org3ef1398" class="outline-3">
+<h3 id="org3ef1398">Arduinoで赤外線を受信し、16進数で取得</h3>
+<div class="outline-text-3" id="text-org3ef1398">
 <ul class="org-ul">
 <li><a href="https://omoroya.com/arduino-lesson15/">Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】</a></li>
 
@@ -377,9 +381,9 @@ todo
 </div>
 </div>
 </div>
-<div id="outline-container-org4148c2a" class="outline-2">
-<h2 id="org4148c2a">Arduinoで水耕栽培</h2>
-<div class="outline-text-2" id="text-org4148c2a">
+<div id="outline-container-org2ee7e6e" class="outline-2">
+<h2 id="org2ee7e6e">Arduinoで水耕栽培</h2>
+<div class="outline-text-2" id="text-org2ee7e6e">
 <p>
 todo
 </p>
