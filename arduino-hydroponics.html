@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-09 Wed 10:21 -->
+<!-- 2022-02-09 Wed 20:11 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arduinoで水耕栽培</title>
@@ -224,19 +224,19 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org616527e">はじめに</a></li>
-<li><a href="#orge504ece">背景</a></li>
-<li><a href="#orgf33c179">Arduinoでエアコン自動化</a>
+<li><a href="#org11d5482">はじめに</a></li>
+<li><a href="#org79434d4">背景</a></li>
+<li><a href="#orgf5ffafb">Arduinoでエアコン自動化</a>
 <ul>
-<li><a href="#org51515e3">買い物</a></li>
-<li><a href="#orgc0babb3">環境構築</a></li>
-<li><a href="#orga25e1d4">Arduinoで内蔵LEDを点滅させる</a></li>
-<li><a href="#org0f29f83">Arduinoで外部LEDを点滅させる</a></li>
-<li><a href="#org64d6bb2">Arduinoで赤外線を受信し、16進数で取得</a></li>
+<li><a href="#org25a19a2">買い物</a></li>
+<li><a href="#orge68ba1d">環境構築</a></li>
+<li><a href="#org0bdeb56">Arduinoで内蔵LEDを点滅させる</a></li>
+<li><a href="#orga4f43c0">Arduinoで外部LEDを点滅させる</a></li>
+<li><a href="#org922bbdc">Arduinoで赤外線を受信し、16進数で取得</a></li>
 </ul>
 </li>
-<li><a href="#org8bfa134">Arduinoで水耕栽培</a></li>
-<li><a href="#orgf47c681">参考文献</a></li>
+<li><a href="#orgd89f088">Arduinoで水耕栽培</a></li>
+<li><a href="#orgb185571">参考文献</a></li>
 </ul>
 </div>
 </div>
@@ -246,27 +246,27 @@
 </p>
 </blockquote>
 
-<div id="outline-container-org616527e" class="outline-2">
-<h2 id="org616527e">はじめに</h2>
-<div class="outline-text-2" id="text-org616527e">
+<div id="outline-container-org11d5482" class="outline-2">
+<h2 id="org11d5482">はじめに</h2>
+<div class="outline-text-2" id="text-org11d5482">
 <p>
 この文章は、マイクロコンピュータを用いて水耕栽培を自動化することを目標にした開発の忘備録で、現在執筆中です。
 </p>
 </div>
 </div>
-<div id="outline-container-orge504ece" class="outline-2">
-<h2 id="orge504ece">背景</h2>
+<div id="outline-container-org79434d4" class="outline-2">
+<h2 id="org79434d4">背景</h2>
 </div>
-<div id="outline-container-orgf33c179" class="outline-2">
-<h2 id="orgf33c179">Arduinoでエアコン自動化</h2>
-<div class="outline-text-2" id="text-orgf33c179">
+<div id="outline-container-orgf5ffafb" class="outline-2">
+<h2 id="orgf5ffafb">Arduinoでエアコン自動化</h2>
+<div class="outline-text-2" id="text-orgf5ffafb">
 </div>
-<div id="outline-container-org51515e3" class="outline-3">
-<h3 id="org51515e3">買い物</h3>
+<div id="outline-container-org25a19a2" class="outline-3">
+<h3 id="org25a19a2">買い物</h3>
 </div>
-<div id="outline-container-orgc0babb3" class="outline-3">
-<h3 id="orgc0babb3">環境構築</h3>
-<div class="outline-text-3" id="text-orgc0babb3">
+<div id="outline-container-orge68ba1d" class="outline-3">
+<h3 id="orge68ba1d">環境構築</h3>
+<div class="outline-text-3" id="text-orge68ba1d">
 <p>
 ホスト環境は以下の通りです：
 </p>
@@ -279,50 +279,84 @@ Release:	18.04
 Codename:	bionic
 </pre>
 
-<p>
-<a href="https://101010.fun/iot/esp32-blink-led.html">ESP32でLチカするまでの設定</a>
-</p>
+<ul class="org-ul">
+<li><a href="https://101010.fun/iot/esp32-blink-led.html">ESP32でLチカするまでの設定</a></li>
+</ul>
 
 <p>
-このブログにはGUIのArduino IDEを用いる方法が書かれています。しかし私の環境ではこの方法は少し問題があった(具体的にいうと、以前行なった設定がリブート後に持ち越せなかった)ので、次に紹介するCLIを使うことにしました。
+このブログにはGUIのArduino IDEを用いる方法が書かれています。しかし私の環境ではこの方法は少し問題があった(具体的にいうと、以前行なった設定がリブート後に持ち越せなかった)ので、次に紹介するCLIを使うことにしました。エディタはemacsで、c-modeをhookして使いました。
 </p>
 
-<p>
-<a href="https://arduino.github.io/arduino-cli/0.21/installation/">Arduino CLI Installation</a>
-</p>
+<pre class="example">
+;; ~/.emacs.d/init.el
+;; hook c-mode when .ino extension
+(add-to-list 'auto-mode-alist
+	     '("\\.ino\\'" . (lambda ()   
+			       (c-mode)
+			       )))
+</pre>
 
 <p>
-<a href="https://arduino.github.io/arduino-cli/0.21/getting-started/">Arduino CLI Getting started</a>
+ビルドはコマンドラインから行ないます。
 </p>
+
+<pre class="example">
+# Makefile
+DEV = ttyUSB0
+CC = /opt/arduino-cli_0.20.2_Linux_64bit/arduino-cli
+
+monitor:upload
+	$(CC) monitor -p /dev/$(DEV)
+
+upload:compile
+	$(CC) upload --port /dev/$(DEV) --fqbn esp32:esp32:esp32 .
+
+compile:device
+	$(CC) compile --fqbn esp32:esp32:esp32 .
+
+device:
+	sudo chmod a+rw /dev/$(DEV)
+
+new:
+	$(CC) sketch new name
+</pre>
+
+<ul class="org-ul">
+<li><a href="https://arduino.github.io/arduino-cli/0.21/installation/">Arduino CLI Installation</a></li>
+
+<li><a href="https://arduino.github.io/arduino-cli/0.21/getting-started/">Arduino CLI Getting started</a></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-orga25e1d4" class="outline-3">
-<h3 id="orga25e1d4">Arduinoで内蔵LEDを点滅させる</h3>
+<div id="outline-container-org0bdeb56" class="outline-3">
+<h3 id="org0bdeb56">Arduinoで内蔵LEDを点滅させる</h3>
 </div>
-<div id="outline-container-org0f29f83" class="outline-3">
-<h3 id="org0f29f83">Arduinoで外部LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-org0f29f83">
+<div id="outline-container-orga4f43c0" class="outline-3">
+<h3 id="orga4f43c0">Arduinoで外部LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-orga4f43c0">
 <p>
 <img src="./images-a/led.jpg" alt="led.jpg" />
 <img src="./images-a/circuit.jpg" alt="circuit.jpg" />
 </p>
 </div>
 </div>
-<div id="outline-container-org64d6bb2" class="outline-3">
-<h3 id="org64d6bb2">Arduinoで赤外線を受信し、16進数で取得</h3>
-<div class="outline-text-3" id="text-org64d6bb2">
-<p>
-<a href="https://omoroya.com/arduino-lesson15/">Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】</a>
-</p>
+<div id="outline-container-org922bbdc" class="outline-3">
+<h3 id="org922bbdc">Arduinoで赤外線を受信し、16進数で取得</h3>
+<div class="outline-text-3" id="text-org922bbdc">
+<ul class="org-ul">
+<li><a href="https://omoroya.com/arduino-lesson15/">Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】</a></li>
+
+<li><a href="https://www.youtube.com/watch?v=8E3ltjnbV0c">Using IR Remote Controls with the Arduino</a></li>
+</ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org8bfa134" class="outline-2">
-<h2 id="org8bfa134">Arduinoで水耕栽培</h2>
+<div id="outline-container-orgd89f088" class="outline-2">
+<h2 id="orgd89f088">Arduinoで水耕栽培</h2>
 </div>
-<div id="outline-container-orgf47c681" class="outline-2">
-<h2 id="orgf47c681">参考文献</h2>
+<div id="outline-container-orgb185571" class="outline-2">
+<h2 id="orgb185571">参考文献</h2>
 </div>
 </div>
 </body>
