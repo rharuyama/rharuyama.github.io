@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-09 Wed 21:20 -->
+<!-- 2022-02-09 Wed 21:25 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arduinoでエアコン自動化・水耕栽培</title>
@@ -224,18 +224,18 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org6337ba0">はじめに</a></li>
-<li><a href="#org4cd6be0">背景</a></li>
-<li><a href="#org7b43e90">Arduinoでエアコン自動化</a>
+<li><a href="#org8f4ea9b">はじめに</a></li>
+<li><a href="#orgbb1e30c">背景</a></li>
+<li><a href="#orge3fe968">Arduinoでエアコン自動化</a>
 <ul>
-<li><a href="#orgdfe33f0">買い物</a></li>
-<li><a href="#orgd12cf18">環境構築</a></li>
-<li><a href="#orgd735b4b">Arduinoで内蔵LEDを点滅させる</a></li>
-<li><a href="#orgbf9b73b">Arduinoで外部LEDを点滅させる</a></li>
-<li><a href="#orgd7b29ba">Arduinoで赤外線を受信し、16進数で取得</a></li>
+<li><a href="#orgf47ddd3">買い物</a></li>
+<li><a href="#orgbb47c0a">環境構築</a></li>
+<li><a href="#orgdcf94ec">Arduinoで内蔵LEDを点滅させる</a></li>
+<li><a href="#orgafbe5e6">Arduinoで外部LEDを点滅させる</a></li>
+<li><a href="#org498f499">Arduinoで赤外線を受信し、16進数で取得</a></li>
 </ul>
 </li>
-<li><a href="#orgc3c262b">Arduinoで水耕栽培</a></li>
+<li><a href="#org4ba966d">Arduinoで水耕栽培</a></li>
 </ul>
 </div>
 </div>
@@ -243,42 +243,42 @@
 
 <blockquote>
 <p>
-<i>このプロジェクトは現在進行中で、本稿はいまだに内容が少なく、かつ解説がわかりにくいです。いずれキリの良いタイミングで、わかりやすく書き直すと思います。しかし、<a href="https://twitter.com/tsnghsi0402">このアカウント</a>で「Arduinoでエアコン自動化・水耕栽培」に関する進捗を随時更新しています。そちらを見ていただければ最新の情報にたどりつけます。</i>
+<i>このプロジェクトは現在進行中で、本稿はいまだに内容が少なく、かつ解説がわかりにくいです。いずれキリの良いタイミングで、わかりやすく書き直すと思います。<a href="https://twitter.com/tsnghsi0402">このアカウント</a>では「Arduinoでエアコン自動化・水耕栽培」に関する進捗を随時更新しています。そちらを見ていただければ最新の情報にたどりつけます。</i>
 </p>
 </blockquote>
 
-<div id="outline-container-org6337ba0" class="outline-2">
-<h2 id="org6337ba0">はじめに</h2>
-<div class="outline-text-2" id="text-org6337ba0">
+<div id="outline-container-org8f4ea9b" class="outline-2">
+<h2 id="org8f4ea9b">はじめに</h2>
+<div class="outline-text-2" id="text-org8f4ea9b">
 <p>
 この文章は、マイクロコンピュータを用いて水耕栽培を自動化することを目標にした開発の忘備録で、現在執筆中です。
 </p>
 </div>
 </div>
-<div id="outline-container-org4cd6be0" class="outline-2">
-<h2 id="org4cd6be0">背景</h2>
-<div class="outline-text-2" id="text-org4cd6be0">
+<div id="outline-container-orgbb1e30c" class="outline-2">
+<h2 id="orgbb1e30c">背景</h2>
+<div class="outline-text-2" id="text-orgbb1e30c">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-org7b43e90" class="outline-2">
-<h2 id="org7b43e90">Arduinoでエアコン自動化</h2>
-<div class="outline-text-2" id="text-org7b43e90">
+<div id="outline-container-orge3fe968" class="outline-2">
+<h2 id="orge3fe968">Arduinoでエアコン自動化</h2>
+<div class="outline-text-2" id="text-orge3fe968">
 </div>
-<div id="outline-container-orgdfe33f0" class="outline-3">
-<h3 id="orgdfe33f0">買い物</h3>
-<div class="outline-text-3" id="text-orgdfe33f0">
+<div id="outline-container-orgf47ddd3" class="outline-3">
+<h3 id="orgf47ddd3">買い物</h3>
+<div class="outline-text-3" id="text-orgf47ddd3">
 <ul class="org-ul">
 <li><a href="https://www.amazon.co.jp/gp/product/B086WWNP9Y/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&amp;psc=1">VKLSVAN ESP32 ESP-32S NodeMCUマイクロUSBデュアルコア開発ボードモジュール 2.4GHz ワイヤレスWiFi + Bluetoothデュアルモード ESP-WROOM-32モジュール内臓 マイクロコントローラ</a></li>
 <li><a href="https://www.amazon.co.jp/gp/product/B06XF2HZGT/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&amp;psc=1">ELEGOO Arduino用UNO R3スターターキット レベルアップ チュートリアル付 mega2560 r3 nanoと互換 [並行輸入品]​</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd12cf18" class="outline-3">
-<h3 id="orgd12cf18">環境構築</h3>
-<div class="outline-text-3" id="text-orgd12cf18">
+<div id="outline-container-orgbb47c0a" class="outline-3">
+<h3 id="orgbb47c0a">環境構築</h3>
+<div class="outline-text-3" id="text-orgbb47c0a">
 <p>
 ホスト環境は以下の通りです：
 </p>
@@ -345,26 +345,26 @@ new:
 </div>
 </div>
 
-<div id="outline-container-orgd735b4b" class="outline-3">
-<h3 id="orgd735b4b">Arduinoで内蔵LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-orgd735b4b">
+<div id="outline-container-orgdcf94ec" class="outline-3">
+<h3 id="orgdcf94ec">Arduinoで内蔵LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-orgdcf94ec">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-orgbf9b73b" class="outline-3">
-<h3 id="orgbf9b73b">Arduinoで外部LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-orgbf9b73b">
+<div id="outline-container-orgafbe5e6" class="outline-3">
+<h3 id="orgafbe5e6">Arduinoで外部LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-orgafbe5e6">
 <p>
 <img src="./images-a/led.jpg" alt="led.jpg" />
 <img src="./images-a/circuit.jpg" alt="circuit.jpg" />
 </p>
 </div>
 </div>
-<div id="outline-container-orgd7b29ba" class="outline-3">
-<h3 id="orgd7b29ba">Arduinoで赤外線を受信し、16進数で取得</h3>
-<div class="outline-text-3" id="text-orgd7b29ba">
+<div id="outline-container-org498f499" class="outline-3">
+<h3 id="org498f499">Arduinoで赤外線を受信し、16進数で取得</h3>
+<div class="outline-text-3" id="text-org498f499">
 <ul class="org-ul">
 <li><a href="https://omoroya.com/arduino-lesson15/">Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】</a></li>
 
@@ -373,9 +373,9 @@ todo
 </div>
 </div>
 </div>
-<div id="outline-container-orgc3c262b" class="outline-2">
-<h2 id="orgc3c262b">Arduinoで水耕栽培</h2>
-<div class="outline-text-2" id="text-orgc3c262b">
+<div id="outline-container-org4ba966d" class="outline-2">
+<h2 id="org4ba966d">Arduinoで水耕栽培</h2>
+<div class="outline-text-2" id="text-org4ba966d">
 <p>
 todo
 </p>
