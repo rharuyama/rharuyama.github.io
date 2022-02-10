@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-10 Thu 12:08 -->
+<!-- 2022-02-10 Thu 12:36 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arduinoでエアコン自動化・水耕栽培</title>
@@ -224,26 +224,28 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9d99115">はじめに</a></li>
-<li><a href="#org0c83318">背景</a></li>
-<li><a href="#org04f0033">Arduinoでエアコン自動化</a>
+<li><a href="#orgb3df936">はじめに</a></li>
+<li><a href="#org2226a3c">背景</a></li>
+<li><a href="#orged29aea">Arduinoでエアコン自動化</a>
 <ul>
-<li><a href="#org6a8ccc1">買い物</a></li>
-<li><a href="#orgd882d1a">環境構築</a></li>
-<li><a href="#orgd7a6af9">Arduinoで内蔵LEDを点滅させる</a></li>
-<li><a href="#orgf0845f1">Arduinoで外部LEDを点滅させる</a></li>
-<li><a href="#org7f9200e">Arduinoで赤外線を受信し、16進数で取得</a></li>
+<li><a href="#org1eca1cb">買い物</a></li>
+<li><a href="#org81886b5">環境構築</a></li>
+<li><a href="#org81f9596">Arduinoで内蔵LEDを点滅させる</a></li>
+<li><a href="#org2b19a4c">Arduinoで外部LEDを点滅させる</a></li>
+<li><a href="#orgd7cac69">Arduinoで赤外線を受信し、16進数で取得</a></li>
 </ul>
 </li>
-<li><a href="#orgb53899d">Arduinoで水耕栽培</a></li>
+<li><a href="#org7f8762a">Arduinoで水耕栽培</a></li>
 </ul>
 </div>
 </div>
 <hr />
 
+<div class="org-center">
 <p>
 Author: <a href="https://rharuyama.github.io/">Ryo Haruyama</a>
 </p>
+</div>
 
 <blockquote>
 <p>
@@ -255,9 +257,9 @@ Author: <a href="https://rharuyama.github.io/">Ryo Haruyama</a>
 </p>
 </blockquote>
 
-<div id="outline-container-org9d99115" class="outline-2">
-<h2 id="org9d99115">はじめに</h2>
-<div class="outline-text-2" id="text-org9d99115">
+<div id="outline-container-orgb3df936" class="outline-2">
+<h2 id="orgb3df936">はじめに</h2>
+<div class="outline-text-2" id="text-orgb3df936">
 <p>
 この文章は、マイクロコンピュータ(マイコン)を用いて水耕栽培を自動化することを目標にした開発の忘備録で、現在執筆中です。
 </p>
@@ -293,21 +295,21 @@ Author: <a href="https://rharuyama.github.io/">Ryo Haruyama</a>
 </div>
 </div>
 
-<div id="outline-container-org0c83318" class="outline-2">
-<h2 id="org0c83318">背景</h2>
-<div class="outline-text-2" id="text-org0c83318">
+<div id="outline-container-org2226a3c" class="outline-2">
+<h2 id="org2226a3c">背景</h2>
+<div class="outline-text-2" id="text-org2226a3c">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-org04f0033" class="outline-2">
-<h2 id="org04f0033">Arduinoでエアコン自動化</h2>
-<div class="outline-text-2" id="text-org04f0033">
+<div id="outline-container-orged29aea" class="outline-2">
+<h2 id="orged29aea">Arduinoでエアコン自動化</h2>
+<div class="outline-text-2" id="text-orged29aea">
 </div>
-<div id="outline-container-org6a8ccc1" class="outline-3">
-<h3 id="org6a8ccc1">買い物</h3>
-<div class="outline-text-3" id="text-org6a8ccc1">
+<div id="outline-container-org1eca1cb" class="outline-3">
+<h3 id="org1eca1cb">買い物</h3>
+<div class="outline-text-3" id="text-org1eca1cb">
 <p>
 真先に買ったのはこのスターターキットです。
 </p>
@@ -326,9 +328,9 @@ todo
 </div>
 </div>
 
-<div id="outline-container-orgd882d1a" class="outline-3">
-<h3 id="orgd882d1a">環境構築</h3>
-<div class="outline-text-3" id="text-orgd882d1a">
+<div id="outline-container-org81886b5" class="outline-3">
+<h3 id="org81886b5">環境構築</h3>
+<div class="outline-text-3" id="text-org81886b5">
 <p>
 ホスト環境は以下の通りです：
 </p>
@@ -408,26 +410,26 @@ export PATH="$PATH:/opt/arduino-cli_0.20.2_Linux_64bit/"
 </div>
 </div>
 
-<div id="outline-container-orgd7a6af9" class="outline-3">
-<h3 id="orgd7a6af9">Arduinoで内蔵LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-orgd7a6af9">
+<div id="outline-container-org81f9596" class="outline-3">
+<h3 id="org81f9596">Arduinoで内蔵LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-org81f9596">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-orgf0845f1" class="outline-3">
-<h3 id="orgf0845f1">Arduinoで外部LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-orgf0845f1">
+<div id="outline-container-org2b19a4c" class="outline-3">
+<h3 id="org2b19a4c">Arduinoで外部LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-org2b19a4c">
 <p>
 <img src="./images-a/led.jpg" alt="led.jpg" />
 <img src="./images-a/circuit.jpg" alt="circuit.jpg" />
 </p>
 </div>
 </div>
-<div id="outline-container-org7f9200e" class="outline-3">
-<h3 id="org7f9200e">Arduinoで赤外線を受信し、16進数で取得</h3>
-<div class="outline-text-3" id="text-org7f9200e">
+<div id="outline-container-orgd7cac69" class="outline-3">
+<h3 id="orgd7cac69">Arduinoで赤外線を受信し、16進数で取得</h3>
+<div class="outline-text-3" id="text-orgd7cac69">
 <ul class="org-ul">
 <li><a href="https://omoroya.com/arduino-lesson15/">Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】</a></li>
 
@@ -436,9 +438,9 @@ todo
 </div>
 </div>
 </div>
-<div id="outline-container-orgb53899d" class="outline-2">
-<h2 id="orgb53899d">Arduinoで水耕栽培</h2>
-<div class="outline-text-2" id="text-orgb53899d">
+<div id="outline-container-org7f8762a" class="outline-2">
+<h2 id="org7f8762a">Arduinoで水耕栽培</h2>
+<div class="outline-text-2" id="text-org7f8762a">
 <p>
 todo
 </p>
