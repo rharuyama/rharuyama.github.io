@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-09 Wed 22:09 -->
+<!-- 2022-02-10 Thu 10:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arduinoでエアコン自動化・水耕栽培</title>
@@ -224,18 +224,18 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgeb0ca08">はじめに</a></li>
-<li><a href="#orga4882bb">背景</a></li>
-<li><a href="#orgea10aed">Arduinoでエアコン自動化</a>
+<li><a href="#org2defa0c">はじめに</a></li>
+<li><a href="#org754e31d">背景</a></li>
+<li><a href="#org6bb5c62">Arduinoでエアコン自動化</a>
 <ul>
-<li><a href="#org56f2788">買い物</a></li>
-<li><a href="#org6ecbbbd">環境構築</a></li>
-<li><a href="#org03b9f98">Arduinoで内蔵LEDを点滅させる</a></li>
-<li><a href="#orga5f6681">Arduinoで外部LEDを点滅させる</a></li>
-<li><a href="#org518364a">Arduinoで赤外線を受信し、16進数で取得</a></li>
+<li><a href="#orgcef989b">買い物</a></li>
+<li><a href="#org10fec06">環境構築</a></li>
+<li><a href="#orge1f413f">Arduinoで内蔵LEDを点滅させる</a></li>
+<li><a href="#org05fbdf5">Arduinoで外部LEDを点滅させる</a></li>
+<li><a href="#org11cf443">Arduinoで赤外線を受信し、16進数で取得</a></li>
 </ul>
 </li>
-<li><a href="#org3693d7d">Arduinoで水耕栽培</a></li>
+<li><a href="#org4699adf">Arduinoで水耕栽培</a></li>
 </ul>
 </div>
 </div>
@@ -251,29 +251,59 @@
 </p>
 </blockquote>
 
-<div id="outline-container-orgeb0ca08" class="outline-2">
-<h2 id="orgeb0ca08">はじめに</h2>
-<div class="outline-text-2" id="text-orgeb0ca08">
+<div id="outline-container-org2defa0c" class="outline-2">
+<h2 id="org2defa0c">はじめに</h2>
+<div class="outline-text-2" id="text-org2defa0c">
 <p>
-この文章は、マイクロコンピュータを用いて水耕栽培を自動化することを目標にした開発の忘備録で、現在執筆中です。
+この文章は、マイクロコンピュータ(マイコン)を用いて水耕栽培を自動化することを目標にした開発の忘備録で、現在執筆中です。
+</p>
+
+<p>
+マイコンとは、ざっくりいうと小さいコンピュータです。パソコンと違ってディスプレイやキーボードがついておらず、機器は必要に応じてくっつけていきます。例えば、光や温度のセンサーから情報を得てプログラムで処理し、モーターに働きかけることなどができます。
+</p>
+
+<p>
+マイコンで水耕栽培をするメリットは、次の通りです。
+</p>
+
+<ul class="org-ul">
+<li>自動化により人手が減らせる。水耕栽培では、葉物野菜が比較的容易に作れる。(参考：<a href="https://jitaku-yasai.com/self-made-hydropnics-small/">【お手軽自作】ちょっと自作したい人におすすめ。水耕栽培装置を一から作る！</a>)</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>データが取れるので仮説検証のサイクルが回しやすい。例えば、この光量だとレタスが苦くなるががこの光量だと苦くならない、のようなノウハウが蓄積できる。(参考：<a href="https://jitaku-yasai.com/home-made/raspberrypi-iot-showgraph/">ラズパイでIoT MySQLの温度データを表示しよう</a>)</li>
+</ul>
+
+<p>
+このアイデアの検証、また必要資源の確認のため、マイコンでの処理の部分だけを抜き出し、まずマイコンでエアコンの自動化を試みます。何時にこの処理をスタートし、何時にこの処理をストップする、のような基本的なやることは水耕栽培とあまり変わらないためです。
+</p>
+
+<p>
+また、エアコンの自動化はどの道やっておいて損はないという理由もあります。
+</p>
+
+<p>
+以下、専門的な話が続きます。
 </p>
 </div>
 </div>
-<div id="outline-container-orga4882bb" class="outline-2">
-<h2 id="orga4882bb">背景</h2>
-<div class="outline-text-2" id="text-orga4882bb">
+
+<div id="outline-container-org754e31d" class="outline-2">
+<h2 id="org754e31d">背景</h2>
+<div class="outline-text-2" id="text-org754e31d">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-orgea10aed" class="outline-2">
-<h2 id="orgea10aed">Arduinoでエアコン自動化</h2>
-<div class="outline-text-2" id="text-orgea10aed">
+<div id="outline-container-org6bb5c62" class="outline-2">
+<h2 id="org6bb5c62">Arduinoでエアコン自動化</h2>
+<div class="outline-text-2" id="text-org6bb5c62">
 </div>
-<div id="outline-container-org56f2788" class="outline-3">
-<h3 id="org56f2788">買い物</h3>
-<div class="outline-text-3" id="text-org56f2788">
+<div id="outline-container-orgcef989b" class="outline-3">
+<h3 id="orgcef989b">買い物</h3>
+<div class="outline-text-3" id="text-orgcef989b">
 <p>
 真先に買ったのはこのスターターキットです。
 </p>
@@ -292,9 +322,9 @@ todo
 </div>
 </div>
 
-<div id="outline-container-org6ecbbbd" class="outline-3">
-<h3 id="org6ecbbbd">環境構築</h3>
-<div class="outline-text-3" id="text-org6ecbbbd">
+<div id="outline-container-org10fec06" class="outline-3">
+<h3 id="org10fec06">環境構築</h3>
+<div class="outline-text-3" id="text-org10fec06">
 <p>
 ホスト環境は以下の通りです：
 </p>
@@ -365,26 +395,26 @@ new:
 </div>
 </div>
 
-<div id="outline-container-org03b9f98" class="outline-3">
-<h3 id="org03b9f98">Arduinoで内蔵LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-org03b9f98">
+<div id="outline-container-orge1f413f" class="outline-3">
+<h3 id="orge1f413f">Arduinoで内蔵LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-orge1f413f">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-orga5f6681" class="outline-3">
-<h3 id="orga5f6681">Arduinoで外部LEDを点滅させる</h3>
-<div class="outline-text-3" id="text-orga5f6681">
+<div id="outline-container-org05fbdf5" class="outline-3">
+<h3 id="org05fbdf5">Arduinoで外部LEDを点滅させる</h3>
+<div class="outline-text-3" id="text-org05fbdf5">
 <p>
 <img src="./images-a/led.jpg" alt="led.jpg" />
 <img src="./images-a/circuit.jpg" alt="circuit.jpg" />
 </p>
 </div>
 </div>
-<div id="outline-container-org518364a" class="outline-3">
-<h3 id="org518364a">Arduinoで赤外線を受信し、16進数で取得</h3>
-<div class="outline-text-3" id="text-org518364a">
+<div id="outline-container-org11cf443" class="outline-3">
+<h3 id="org11cf443">Arduinoで赤外線を受信し、16進数で取得</h3>
+<div class="outline-text-3" id="text-org11cf443">
 <ul class="org-ul">
 <li><a href="https://omoroya.com/arduino-lesson15/">Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】</a></li>
 
@@ -393,9 +423,9 @@ todo
 </div>
 </div>
 </div>
-<div id="outline-container-org3693d7d" class="outline-2">
-<h2 id="org3693d7d">Arduinoで水耕栽培</h2>
-<div class="outline-text-2" id="text-org3693d7d">
+<div id="outline-container-org4699adf" class="outline-2">
+<h2 id="org4699adf">Arduinoで水耕栽培</h2>
+<div class="outline-text-2" id="text-org4699adf">
 <p>
 todo
 </p>
