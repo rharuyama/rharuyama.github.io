@@ -2,7 +2,7 @@
 #+options: num:nil 
 #+options: html-postamble:nil
 
-#+title: Arduinoでエアコン自動化・水耕栽培
+#+title: Arduinoでエアコン自動化
 
 -----
 
@@ -13,31 +13,20 @@ Author:  [[https://rharuyama.github.io/][Ryo Haruyama]]
 #+begin_quote
 /このプロジェクトは現在進行中で、本稿はいまだに内容が少なく、かつ解説がわかりにくいです。いずれキリの良いタイミングで、わかりやすく書き直すと思います。/
 
-/[[https://twitter.com/tsnghsi0402][このアカウント]]では「Arduinoでエアコン自動化・水耕栽培」に関する進捗を随時更新しています。そちらを見ていただければ最新の情報にたどりつけます。/
+/[[https://twitter.com/tsnghsi0402][このアカウント]]では「Arduinoでエアコン自動化」に関する進捗を随時更新しています。そちらを見ていただければ最新の情報にたどりつけます。/
 #+end_quote
 
 * はじめに
-この文章は、マイクロコンピュータ(マイコン)を用いて水耕栽培を自動化することを目標にした開発の備忘録で、現在執筆中です。
+この文章は、マイクロコンピュータ(マイコン)を用いてエアコンを自動化することを目標にした開発の備忘録で、現在執筆中です。
 
 マイコンとは、ざっくりいうと小さいコンピュータです。パソコンと違ってディスプレイやキーボードがついておらず、機器は必要に応じてくっつけていきます。例えば、光や温度のセンサーから情報を得てプログラムで処理し、モーターに働きかけることなどができます。
-
-マイコンで水耕栽培をするメリットは、次の通りです。
-
-- 自動化により人手が減らせる。水耕栽培では、葉物野菜が比較的容易に作れる。(参考：[[https://jitaku-yasai.com/self-made-hydropnics-small/][【お手軽自作】ちょっと自作したい人におすすめ。水耕栽培装置を一から作る！]])
-
-
-- データが取れるので仮説検証のサイクルが回しやすい。例えば、この光量だとレタスが苦くなるががこの光量だと苦くならない、のようなノウハウが蓄積できる。(参考：[[https://jitaku-yasai.com/home-made/raspberrypi-iot-showgraph/][ラズパイでIoT MySQLの温度データを表示しよう]])
-
-このアイデアの検証、また必要資源の確認のため、マイコンでの処理の部分だけを抜き出し、まずマイコンでエアコンの自動化を試みます。何時にこの処理をスタートし、何時にこの処理をストップする、のような基本的なやることは水耕栽培とあまり変わらないためです。
-
-また、エアコンの自動化はどの道やっておいて損はないという理由もあります。
 
 以下、専門的な話が続きます。
 
 * 背景
 todo
-* Arduinoでエアコン自動化
-** 買い物
+
+* 買い物
 真先に買ったのはこのスターターキットです。
 
 - [[https://www.amazon.co.jp/gp/product/B06XF2HZGT/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1][ELEGOO Arduino用UNO R3スターターキット レベルアップ チュートリアル付 mega2560 r3 nanoと互換 [並行輸入品]​]]
@@ -48,7 +37,7 @@ todo
 
 大須アメ横ビルで赤外線LED購入
 
-** 環境構築
+* 環境構築
 ホスト環境は以下の通りです：
 #+begin_src
 $ lsb_release -a
@@ -110,9 +99,9 @@ arduino-cliコマンドのパスを通します。
 export PATH="$PATH:/opt/arduino-cli_0.20.2_Linux_64bit/"
 #+end_src
 
-** Arduinoで内蔵LEDを点滅させる
+* Arduinoで内蔵LEDを点滅させる
 todo
-** Arduinoで外部LEDを点滅させる
+* Arduinoで外部LEDを点滅させる
 #+begin_src
 #define LED_PIN 13
 
@@ -132,34 +121,36 @@ void loop() {
 
 [[./images-a/circuit.jpg]]
 
-** Arduinoで赤外線を受信し、16進数で取得
+* Arduinoで赤外線を受信し、16進数で取得
 - [[https://omoroya.com/arduino-lesson15/][Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】]]
   
 - [[https://www.youtube.com/watch?v=8E3ltjnbV0c][Using IR Remote Controls with the Arduino]]
 
-** LEDをトランジスタで点滅させる
+* LEDをトランジスタで点滅させる
 todo
 
-** 赤外線LEDをトランジスタで点滅させる
+* 赤外線LEDをトランジスタで点滅させる
 todo
 
-** WiFi経由でLEDを点滅させる
+* WiFi経由でLEDを点滅させる
 - [[https://shinog.jp/computer/arduino/esp32-%E3%81%AE-wi-fi-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/][ESP32 の Wi-Fi を使ってみる]]
 
-** フロントエンド
-Elm + VSCode
+* フロントエンド
+Elm + VSCode/emacs
 
+Elmを使うとき、メッセージでつまづきがち。この図とコードの対応、msgが型変数であることを確認して、この図をいつでも書けるようにしておくことが重要です。
+
+- [[https://guide.elm-lang.jp/architecture/][図(基本的なパターン)]]
+
+- [[https://github.com/avh4/elm-format][elm-format]]
 - [[https://github.com/jinjor/elm-book/tree/master/3_7_search-box][search-box]]
 - [[https://guide.elm-lang.jp/interop/][JavaScriptとの相互運用]]
 
-** バックエンド
+* バックエンド
 Rust + emacs
 
 - [[https://caddi.tech/archives/416][RustでWebアプリケーションを作る]]
 - [[https://docs.rs/warp/0.1.16/warp/filters/cors/fn.cors.html][Function warp::filters::cors::cors]]
-
-* Arduinoで水耕栽培
-todo
 
 * その他
 - [[https://peer2.net/sjdojo/?p=11901][スマートメーターから電力消費データを読み出すには]]
