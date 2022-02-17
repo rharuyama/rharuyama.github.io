@@ -24,7 +24,7 @@
 
 * Blog
   - [[./nara20220112.html][奈良観光記録]]
-  - [[arduino-hydroponics.html][Arduinoでエアコン自動化]]
+  - [[./arduino-hydroponics.html][Arduinoでエアコン自動化]]
 
   #+options: toc:nil
   #+options: num:nil   
