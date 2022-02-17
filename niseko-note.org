@@ -1,0 +1,49 @@
+#+options: toc:nil
+#+options: num:nil   
+#+options: html-postamble:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+
+#+title: ニセコエリア視察メモ
+#+begin_center
+<2020-01-07 Tue>
+#+end_center
+
+ - 白人が多い
+ - スキー場を見ればニセコエリアの経済勢力図がわかる
+ - AppleのMapの方向機能がニセコ周辺で機能していないようだった。GPSの問題か？
+ - ヒルトンニセコビレッジの温泉は古い
+ - 食べ物の味が濃い
+ - ニセコエリアは交通が不便でわかりにくい。バスは一時間に一本で、間違えると辛い。バスの運転手はバス停ごとに地名を英語で叫んでいた。こちらが日本語で話しかけているのに英語で返された。バーの店員さん曰く、外国人の間ではヒッチハイクが流行しているらしい。
+ - ニセコエリア、バスが不便すぎて外国人の間でヒッチハイクが流行しているほどらしいので、こういうのをニセコとかでやってほしい
+ - 倶知安駅前のホテルガラ空き。本当に地価高騰しているのか。
+ - マックスバリュとひらふ十字街のセイコーマートにニセコ高橋牧場のチーズがあった。保存のノウハウがあるのがここだけなのだろうか？飲むヨーグルトはだいたいどこにでも売っている。
+
+* リンク集
+- [[https://www.nisekobus.co.jp/route-map.html][ニセコバス全路線図]]
+- [[https://welove.expedia.co.jp/destination/japan/42667/][Expediaのニセコひらふ散策記事]]
+- [[https://pucchi.net/hokkaido/ent/nisekoski.php][４つのスキー場の違い（ソースは[5]か？）]]
+- [[http://www.kawanisi.jp/ski/01.htm][スキーリゾートの開発と発展]]
+- [[https://ja.wikipedia.org/wiki/ニセコアンヌプリ国際スキー場][ニセコアンヌプリ国際スキー場（Wikipedia）]]
+- [[https://ja.wikipedia.org/wiki/ニセコビレッジ][ニセコビレッジ（Wikipedia）]]
+- [[https://ja.wikipedia.org/wiki/ニセコマウンテンリゾート_グラン・ヒラフ][ニセコマウンテンリゾートグラン・ヒラフ（Wikipedia）]]
+- [[https://ja.wikipedia.org/wiki/ニセコHANAZONOリゾート][ニセコHANAZONOリゾート（Wikipedia）]]
+- [[https://asia.nikkei.com/Business/Business-trends/Luxury-Singapore-real-estate-developer-hops-on-Niseko-bandwagon][Luxury Singapore real estate developer hops on Niseko bandwagon]]
+- [[https://www.nisekolifeplan.co.jp/?example2][ニセコエリアの不動産　株式会社ニセコライフプラン]]
+- [[https://www.niseko-ta.jp/resorts/stay/][株式会社ニセコリゾート観光協会]]
+- [[https://hokkaido-shohousen.seesaa.net/category/26700276-1.html][瀕死の北海道経済への処方箋ブログ]]
+  
+* ニセコエリア観光ガイドブック
+[1] Wine & Dine, powderlife.com by 一般社団法人Niseko Promotion Board (NPB) (app)
+
+[2] EXPERIENCE nseko , nisekocentral.com by Hokkaido Tourism Management (HTM)　ニセコ地区独立系不動産管理運営会社
+
+[3] NISEKO.COM by skijapan.com (app)
+
+[4] whatsonniseko.com by explore-niseko.com
+
+[5] ニセコエクスプレス by ニセコ山系観光連絡協議会
+
+* その他
+- 一般社団法人ニセコひらふエリアマネジメント (Niseko Pay app)
+- 株式会社NAC
+- roomboss.com
