@@ -155,3 +155,4 @@ Rust + emacs
 * その他
 - [[https://peer2.net/sjdojo/?p=11901][スマートメーターから電力消費データを読み出すには]]
 - [[https://asukiaaa.blogspot.com/2018/05/arduino.html][Arduinoで赤外線リモコンの値を読み取り、送信する方法]]
+- [[https://randomnerdtutorials.com/esp32-ntp-client-date-time-arduino-ide/][Getting Date and Time with ESP32 on Arduino IDE (NTP Client)]]
