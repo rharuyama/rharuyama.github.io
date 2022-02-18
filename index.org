@@ -25,7 +25,7 @@
 
 * Blog
 - [[./nara20220112.html][奈良観光記録]]
-- [[./arduino-hydroponics.html][Arduinoでエアコン自動化]]
+- [[./arduino.html][Arduinoでエアコン自動化]]
 - [[./niseko-note.html][ニセコエリア視察メモ]]
 
 * Education
