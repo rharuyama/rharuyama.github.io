@@ -5,11 +5,6 @@
 
 * Interests
 - Linear Logic
-- Listening and speaking English
-- Economics in Hokkaido, especially Niseko
-- Sharing economy concerning real estate
-- Emacs
-- Walking
   
 * Links
 -  [[https://github.com/rharuyama/][GitHub]]
