@@ -6,10 +6,11 @@
 * Interests
 - Linear Logic
   
-* Links
--  [[https://github.com/rharuyama/][GitHub]]
--  [[https://twitter.com/RyoHaruyama][Twitter]]
--  [[https://connpass.com/user/Ryo_Haruyama/][connpass]]  
+* Socials
+- [[https://github.com/rharuyama/][GitHub]]
+- [[https://twitter.com/RyoHaruyama][Twitter]]
+- [[https://connpass.com/user/Ryo_Haruyama/][connpass]]
+- Clubhouse: @ryoharuyama
 
 * Email
 - ryohあnagoya-u.jp
