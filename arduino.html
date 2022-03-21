@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-18 Fri 22:28 -->
+<!-- 2022-03-21 Mon 14:06 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arduinoでエアコン自動化</title>
@@ -224,19 +224,19 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgddafcfa">はじめに</a></li>
-<li><a href="#orgc93eacd">背景</a></li>
-<li><a href="#org6109318">買い物</a></li>
-<li><a href="#orgf030587">環境構築</a></li>
-<li><a href="#orge2a8d8f">Arduinoで内蔵LEDを点滅させる</a></li>
-<li><a href="#org5e4b7c5">Arduinoで外部LEDを点滅させる</a></li>
-<li><a href="#orgf4920f5">Arduinoで赤外線を受信し、16進数で取得</a></li>
-<li><a href="#orgc32b844">LEDをトランジスタで点滅させる</a></li>
-<li><a href="#orgfdab7e6">赤外線LEDをトランジスタで点滅させる</a></li>
-<li><a href="#org68b80f4">WiFi経由でLEDを点滅させる</a></li>
-<li><a href="#org77a7a31">フロントエンド</a></li>
-<li><a href="#org4cb1e1f">バックエンド</a></li>
-<li><a href="#org1734e25">その他</a></li>
+<li><a href="#org718e856">はじめに</a></li>
+<li><a href="#org5c20e49">背景</a></li>
+<li><a href="#orgbc6ecae">買い物</a></li>
+<li><a href="#orge7fad20">環境構築</a></li>
+<li><a href="#org66e3e15">Arduinoで内蔵LEDを点滅させる</a></li>
+<li><a href="#orgc558a3e">Arduinoで外部LEDを点滅させる</a></li>
+<li><a href="#orgafd514c">Arduinoで赤外線を受信し、16進数で取得</a></li>
+<li><a href="#org23a4fb0">LEDをトランジスタで点滅させる</a></li>
+<li><a href="#org9e01f22">赤外線LEDをトランジスタで点滅させる</a></li>
+<li><a href="#org97c5cd9">WiFi経由でLEDを点滅させる</a></li>
+<li><a href="#org6f161e2">フロントエンド</a></li>
+<li><a href="#org73558e3">バックエンド</a></li>
+<li><a href="#orgee8797b">その他</a></li>
 </ul>
 </div>
 </div>
@@ -258,9 +258,9 @@ Author:  <a href="https://rharuyama.github.io/">Ryo Haruyama</a>
 </p>
 </blockquote>
 
-<div id="outline-container-orgddafcfa" class="outline-2">
-<h2 id="orgddafcfa">はじめに</h2>
-<div class="outline-text-2" id="text-orgddafcfa">
+<div id="outline-container-org718e856" class="outline-2">
+<h2 id="org718e856">はじめに</h2>
+<div class="outline-text-2" id="text-org718e856">
 <p>
 この文章は、マイクロコンピュータ(マイコン)を用いてエアコンを自動化することを目標にした開発の備忘録で、現在執筆中です。
 </p>
@@ -275,18 +275,18 @@ Author:  <a href="https://rharuyama.github.io/">Ryo Haruyama</a>
 </div>
 </div>
 
-<div id="outline-container-orgc93eacd" class="outline-2">
-<h2 id="orgc93eacd">背景</h2>
-<div class="outline-text-2" id="text-orgc93eacd">
+<div id="outline-container-org5c20e49" class="outline-2">
+<h2 id="org5c20e49">背景</h2>
+<div class="outline-text-2" id="text-org5c20e49">
 <p>
 todo
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6109318" class="outline-2">
-<h2 id="org6109318">買い物</h2>
-<div class="outline-text-2" id="text-org6109318">
+<div id="outline-container-orgbc6ecae" class="outline-2">
+<h2 id="orgbc6ecae">買い物</h2>
+<div class="outline-text-2" id="text-orgbc6ecae">
 <p>
 真先に買ったのはこのスターターキットです。
 </p>
@@ -309,9 +309,9 @@ todo
 </div>
 </div>
 
-<div id="outline-container-orgf030587" class="outline-2">
-<h2 id="orgf030587">環境構築</h2>
-<div class="outline-text-2" id="text-orgf030587">
+<div id="outline-container-orge7fad20" class="outline-2">
+<h2 id="orge7fad20">環境構築</h2>
+<div class="outline-text-2" id="text-orge7fad20">
 <p>
 ホスト環境は以下の通りです：
 </p>
@@ -391,17 +391,17 @@ export PATH="$PATH:/opt/arduino-cli_0.20.2_Linux_64bit/"
 </div>
 </div>
 
-<div id="outline-container-orge2a8d8f" class="outline-2">
-<h2 id="orge2a8d8f">Arduinoで内蔵LEDを点滅させる</h2>
-<div class="outline-text-2" id="text-orge2a8d8f">
+<div id="outline-container-org66e3e15" class="outline-2">
+<h2 id="org66e3e15">Arduinoで内蔵LEDを点滅させる</h2>
+<div class="outline-text-2" id="text-org66e3e15">
 <p>
 todo
 </p>
 </div>
 </div>
-<div id="outline-container-org5e4b7c5" class="outline-2">
-<h2 id="org5e4b7c5">Arduinoで外部LEDを点滅させる</h2>
-<div class="outline-text-2" id="text-org5e4b7c5">
+<div id="outline-container-orgc558a3e" class="outline-2">
+<h2 id="orgc558a3e">Arduinoで外部LEDを点滅させる</h2>
+<div class="outline-text-2" id="text-orgc558a3e">
 <pre class="example">
 #define LED_PIN 13
 
@@ -418,22 +418,22 @@ void loop() {
 </pre>
 
 
-<div id="org0a7b76f" class="figure">
+<div id="orgdfa88cc" class="figure">
 <p><img src="./images-a/led.jpg" alt="led.jpg" />
 </p>
 </div>
 
 
-<div id="orge7aa8a5" class="figure">
+<div id="orgf79a913" class="figure">
 <p><img src="./images-a/circuit.jpg" alt="circuit.jpg" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgf4920f5" class="outline-2">
-<h2 id="orgf4920f5">Arduinoで赤外線を受信し、16進数で取得</h2>
-<div class="outline-text-2" id="text-orgf4920f5">
+<div id="outline-container-orgafd514c" class="outline-2">
+<h2 id="orgafd514c">Arduinoで赤外線を受信し、16進数で取得</h2>
+<div class="outline-text-2" id="text-orgafd514c">
 <ul class="org-ul">
 <li><a href="https://omoroya.com/arduino-lesson15/">Arduino 入門 Lesson 15 【赤外線受信センサモジュール編】</a></li>
 
@@ -442,38 +442,38 @@ void loop() {
 </div>
 </div>
 
-<div id="outline-container-orgc32b844" class="outline-2">
-<h2 id="orgc32b844">LEDをトランジスタで点滅させる</h2>
-<div class="outline-text-2" id="text-orgc32b844">
+<div id="outline-container-org23a4fb0" class="outline-2">
+<h2 id="org23a4fb0">LEDをトランジスタで点滅させる</h2>
+<div class="outline-text-2" id="text-org23a4fb0">
 <p>
 todo
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgfdab7e6" class="outline-2">
-<h2 id="orgfdab7e6">赤外線LEDをトランジスタで点滅させる</h2>
-<div class="outline-text-2" id="text-orgfdab7e6">
+<div id="outline-container-org9e01f22" class="outline-2">
+<h2 id="org9e01f22">赤外線LEDをトランジスタで点滅させる</h2>
+<div class="outline-text-2" id="text-org9e01f22">
 <p>
 todo
 </p>
 </div>
 </div>
 
-<div id="outline-container-org68b80f4" class="outline-2">
-<h2 id="org68b80f4">WiFi経由でLEDを点滅させる</h2>
-<div class="outline-text-2" id="text-org68b80f4">
+<div id="outline-container-org97c5cd9" class="outline-2">
+<h2 id="org97c5cd9">WiFi経由でLEDを点滅させる</h2>
+<div class="outline-text-2" id="text-org97c5cd9">
 <ul class="org-ul">
 <li><a href="https://shinog.jp/computer/arduino/esp32-%E3%81%AE-wi-fi-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/">ESP32 の Wi-Fi を使ってみる</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org77a7a31" class="outline-2">
-<h2 id="org77a7a31">フロントエンド</h2>
-<div class="outline-text-2" id="text-org77a7a31">
+<div id="outline-container-org6f161e2" class="outline-2">
+<h2 id="org6f161e2">フロントエンド</h2>
+<div class="outline-text-2" id="text-org6f161e2">
 <p>
-Elm + VSCode/emacs
+Elm
 </p>
 
 <p>
@@ -490,23 +490,30 @@ Elmを使うとき、メッセージでつまづきがち。この図とコー�
 </div>
 </div>
 
-<div id="outline-container-org4cb1e1f" class="outline-2">
-<h2 id="org4cb1e1f">バックエンド</h2>
-<div class="outline-text-2" id="text-org4cb1e1f">
+<div id="outline-container-org73558e3" class="outline-2">
+<h2 id="org73558e3">バックエンド</h2>
+<div class="outline-text-2" id="text-org73558e3">
 <p>
-Rust + emacs
+Rust
 </p>
 
 <ul class="org-ul">
 <li><a href="https://caddi.tech/archives/416">RustでWebアプリケーションを作る</a></li>
 <li><a href="https://docs.rs/warp/0.1.16/warp/filters/cors/fn.cors.html">Function warp::filters::cors::cors</a></li>
 </ul>
+
+
+<ul class="org-ul">
+<li><a href="https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/">基本的なウェブアプリケーションを構築する</a></li>
+<li><a href="https://aws.amazon.com/blogs/opensource/rust-runtime-for-aws-lambda/">Rust Runtime for AWS Lambda</a></li>
+<li><a href="https://www.blog.danishi.net/2019/04/14/post-367/">AWS Lambda超入門</a></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-org1734e25" class="outline-2">
-<h2 id="org1734e25">その他</h2>
-<div class="outline-text-2" id="text-org1734e25">
+<div id="outline-container-orgee8797b" class="outline-2">
+<h2 id="orgee8797b">その他</h2>
+<div class="outline-text-2" id="text-orgee8797b">
 <ul class="org-ul">
 <li><a href="https://peer2.net/sjdojo/?p=11901">スマートメーターから電力消費データを読み出すには</a></li>
 <li><a href="https://asukiaaa.blogspot.com/2018/05/arduino.html">Arduinoで赤外線リモコンの値を読み取り、送信する方法</a></li>
