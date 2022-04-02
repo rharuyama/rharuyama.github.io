@@ -26,7 +26,7 @@
 - [[./niseko-note.html][ニセコエリア視察メモ]]
 
 * Education
-- Graduate School of Informatics, Nagoya University - Master of Informatics expected in Mar 2022, 2019-Present
+- Graduate School of Informatics, Nagoya University - Master of Informatics, 2019-2022
 
 - Department of Natural Science Informatics at the School of Informatics and Sciences (now School of Informatics), Nagoya University - Bachelor of Informatics and Sciences, 2015-2019
 
