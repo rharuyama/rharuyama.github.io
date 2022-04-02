@@ -1,7 +1,7 @@
 #+title: Ryo Haruyama
 
 * Bio
-  M2 at Graduate School of Informatics, Naogya University. Born and raised in 北海道沼田町.
+  花。Born and raised in 北海道沼田町.
 
 * Interests
 - Linear Logic
@@ -11,6 +11,7 @@
 - [[https://twitter.com/RyoHaruyama][Twitter]]
 - [[https://connpass.com/user/Ryo_Haruyama/][connpass]]
 - Clubhouse: @ryoharuyama
+- [[https://www.amazon.co.jp/hz/wishlist/ls/3E4DLFWMQOIOE][Wishlist]]
 
 * Email
 - ryohあnagoya-u.jp
