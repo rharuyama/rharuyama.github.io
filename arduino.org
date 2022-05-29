@@ -135,28 +135,6 @@ todo
 * WiFi経由でLEDを点滅させる
 - [[https://shinog.jp/computer/arduino/esp32-%E3%81%AE-wi-fi-%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/][ESP32 の Wi-Fi を使ってみる]]
 
-* フロントエンド
-Elm
-
-Elmを使うとき、メッセージでつまづきがち。この図とコードの対応、msgが型変数であることを確認して、この図をいつでも書けるようにしておくことが重要です。
-
-- [[https://guide.elm-lang.jp/architecture/][図(基本的なパターン)]]
-
-- [[https://github.com/avh4/elm-format][elm-format]]
-- [[https://github.com/jinjor/elm-book/tree/master/3_7_search-box][search-box]]
-- [[https://guide.elm-lang.jp/interop/][JavaScriptとの相互運用]]
-
-* バックエンド
-Rust
-
-- [[https://caddi.tech/archives/416][RustでWebアプリケーションを作る]]
-- [[https://docs.rs/warp/0.1.16/warp/filters/cors/fn.cors.html][Function warp::filters::cors::cors]]
-
-  
-- [[https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/][基本的なウェブアプリケーションを構築する]]
-- [[https://aws.amazon.com/blogs/opensource/rust-runtime-for-aws-lambda/][Rust Runtime for AWS Lambda]]
-- [[https://www.blog.danishi.net/2019/04/14/post-367/][AWS Lambda超入門]]
-
 * その他
 - [[https://peer2.net/sjdojo/?p=11901][スマートメーターから電力消費データを読み出すには]]
 - [[https://asukiaaa.blogspot.com/2018/05/arduino.html][Arduinoで赤外線リモコンの値を読み取り、送信する方法]]
