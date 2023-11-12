@@ -1,7 +1,7 @@
 #+title: Ryo Haruyama
 
 * Bio
-See [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
+藤井撚糸株式会社所属(Email: ryo.hあnenshi.co.jp)。See [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
 
 * Interests
 - Linear Logic
@@ -17,7 +17,7 @@ See [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
 - [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
 
 * Email
-- ryohあnagoya-u.jp
+- Business: ryo.hあnenshi.co.jp
 
 * Slides
 - [[./phase-soundness.pdf][Soundness for Linear Logic regarding Phase Semantics]] (in English)
