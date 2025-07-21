@@ -1,23 +1,28 @@
 #+title: Ryo Haruyama
+#+subtitle: 修士(情報学) / Master of Informatics
 
 * Bio
-藤井撚糸株式会社所属(Email: ryo.hあnenshi.co.jp)。See [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
+See [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
 
 * Interests
 - Linear Logic
   
 * Socials
-- [[https://github.com/rharuyama/][GitHub]]
-- [[https://www.threads.net/@haruyamar][Threads]]
-- [[https://twitter.com/RyoHaruyama][Twitter]]
-- [[https://connpass.com/user/Ryo_Haruyama/][connpass]]
-- [[https://www.clubhouse.com/@ryoharuyama][Clubhouse]]
-- [[https://www.amazon.co.jp/hz/wishlist/ls/3R1LX8E4SHIG6][Wishlist]]
+** アクティブな連絡先
 - [[https://line.me/ti/p/CZo-uvtQ-p][LINE]]
+- ryo.hあnagoya-u.jp
+** 休眠中
+- [[https://mixi.social/invitations/@ryoharuyama/GqttA9b6BRsJLrSWRqg2MA][mixi2]] 
+- [[https://twitter.com/RyoHaruyama][Twitter]]
+- [[https://www.threads.net/@haruyamar][Threads]]
+- [[https://connpass.com/user/Ryo_Haruyama/][connpass]]
+- [[https://github.com/rharuyama/][GitHub]]
 - [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
+- [[https://www.amazon.co.jp/hz/wishlist/ls/3R1LX8E4SHIG6][Wishlist]]
+- [[https://www.clubhouse.com/@ryoharuyama][Clubhouse]]
 
 * Email
-- Business: ryo.hあnenshi.co.jp
+- ryo.hあnagoya-u.jp
 
 * Slides
 - [[./phase-soundness.pdf][Soundness for Linear Logic regarding Phase Semantics]] (in English)
