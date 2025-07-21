@@ -1,0 +1,18 @@
+#+title: Ryo Haruyama
+#+subtitle: 修士(情報学)
+
+#+HTML_HEAD_EXTRA: <div class="lang-switch"><a href="index.html">English</a></div>
+
+* [[https://rharuyama.github.io/socials.html][連絡先]]
+
+* Email
+- ryo.hあnagoya-u.jp
+
+* スライド
+- [[./phase-soundness.pdf][Soundness for Linear Logic regarding Phase Semantics]] (英語)
+- [[./categorical-semantics-of-linear-logic.pdf][線形論理の圏論的意味論]]
+
+#+options: toc:nil
+#+options: num:nil   
+#+options: html-postamble:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />

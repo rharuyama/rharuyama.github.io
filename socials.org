@@ -1,0 +1,21 @@
+#+title: Ryo Haruyama
+#+subtitle: Socials
+
+** アクティブな連絡先
+- [[https://line.me/ti/p/CZo-uvtQ-p][LINE]]
+- ryo.hあnagoya-u.jp
+** 休眠中
+- [[https://mixi.social/invitations/@ryoharuyama/GqttA9b6BRsJLrSWRqg2MA][mixi2]] 
+- [[https://twitter.com/RyoHaruyama][Twitter]]
+- [[https://www.threads.net/@haruyamar][Threads]]
+- [[https://connpass.com/user/Ryo_Haruyama/][connpass]]
+- [[https://github.com/rharuyama/][GitHub]]
+- [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
+- [[https://www.amazon.co.jp/hz/wishlist/ls/3R1LX8E4SHIG6][Wishlist]]
+- [[https://www.clubhouse.com/@ryoharuyama][Clubhouse]]
+
+#+options: toc:nil
+#+options: num:nil   
+#+options: html-postamble:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+  

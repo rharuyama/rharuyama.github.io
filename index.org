@@ -1,25 +1,16 @@
 #+title: Ryo Haruyama
-#+subtitle: 修士(情報学) / Master of Informatics
+#+subtitle: Master of Informatics
+
+#+HTML_HEAD_EXTRA: <div class="lang-switch"><a href="index-ja.html">日本語</a></div>
 
 * Bio
-See [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
+- Background in mathematical logic and programming language theory
+- See [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
 
 * Interests
 - Linear Logic
   
-* Socials
-** アクティブな連絡先
-- [[https://line.me/ti/p/CZo-uvtQ-p][LINE]]
-- ryo.hあnagoya-u.jp
-** 休眠中
-- [[https://mixi.social/invitations/@ryoharuyama/GqttA9b6BRsJLrSWRqg2MA][mixi2]] 
-- [[https://twitter.com/RyoHaruyama][Twitter]]
-- [[https://www.threads.net/@haruyamar][Threads]]
-- [[https://connpass.com/user/Ryo_Haruyama/][connpass]]
-- [[https://github.com/rharuyama/][GitHub]]
-- [[https://www.linkedin.com/in/ryo-haruyama-196220123][LinkedIn]]
-- [[https://www.amazon.co.jp/hz/wishlist/ls/3R1LX8E4SHIG6][Wishlist]]
-- [[https://www.clubhouse.com/@ryoharuyama][Clubhouse]]
+* [[https://rharuyama.github.io/socials.html][Socials]]
 
 * Email
 - ryo.hあnagoya-u.jp
