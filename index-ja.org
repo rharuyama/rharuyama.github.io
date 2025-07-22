@@ -3,7 +3,8 @@
 
 #+HTML_HEAD_EXTRA: <div class="lang-switch"><a href="index.html">English</a></div>
 
-* [[https://rharuyama.github.io/socials.html][連絡先]]
+* 連絡先
+- 詳細は[[https://rharuyama.github.io/socials.html][こちら]]
 
 * Email
 - ryo.hあnagoya-u.jp

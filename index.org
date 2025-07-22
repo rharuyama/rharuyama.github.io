@@ -10,7 +10,8 @@
 * Interests
 - Linear Logic
   
-* [[https://rharuyama.github.io/socials.html][Socials]]
+* Socials
+- [[https://rharuyama.github.io/socials.html][Read more]]
 
 * Email
 - ryo.hあnagoya-u.jp
